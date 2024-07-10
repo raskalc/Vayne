@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "n9Kw97z2V+G7GSqTsBsHMuPQ705bvSryTD363MM7rWboha4Lm6HUj66FNy6px4PwDVuz1b07B8uqzhQ2AUfAOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator\\RiderProjects\\Vayne\\Vayne\\Vayne.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
