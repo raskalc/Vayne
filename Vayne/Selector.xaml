@@ -5,7 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         mc:Ignorable="d"
         Title="Selector" Height="450" Width="800">
-    <Grid Background="Black" Margin="0">
+    <Grid Margin="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="50" />
@@ -20,127 +20,127 @@
             Height="35"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center">
-                <ComboBoxItem Content="2d primitive(triangle)" Selected="OnSelected2d" />
-                <ComboBoxItem Content="3d primitive(sphere)" Selected="OnSelected3d" />
+            <ComboBoxItem Content="2d primitive(triangle)" Selected="OnSelected2d" />
+            <ComboBoxItem Content="3d primitive(sphere)" Selected="OnSelected3d" />
         </ComboBox>
-        
+
         <Grid Visibility="Hidden"
-            x:Name="TriangleGrid"
-            Grid.Column="1"
-            Grid.Row="0"
-            Background="Aqua">
-            <Label Content="Build Triangle form"></Label>
+              x:Name="TriangleGrid"
+              Grid.Column="1"
+              Grid.Row="0">
+            <Label Content="Build Triangle form" />
             <Grid
                 Margin="0 -320 0 0 "
-                Background="Blue"
                 Height="30">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                
-                <Label Grid.Column="0" Content="X-coordinate 1 point"/>
-                <TextBox Name="P1X" Grid.Column="1" Text=""></TextBox> 
-                <Label Grid.Column="2" Content="Y-coordinate 1 point"/>
-                <TextBox Name="P1Y" Grid.Column="3" Text=""></TextBox>
-            </Grid> 
+
+                <Label Grid.Column="0" Content="X-coordinate 1 point" />
+                <TextBox Name="P1X" Grid.Column="1" Text="" />
+                <Label Grid.Column="2" Content="Y-coordinate 1 point" />
+                <TextBox Name="P1Y" Grid.Column="3" Text="" />
+            </Grid>
             <Grid
                 Margin="0 -260 0 0 "
-                Background="Blue"
+                
                 Height="30">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0" Content="X-coordinate 2 point"/>
-                <TextBox Name="P2X" Grid.Column="1" Text=""></TextBox> 
-                <Label Grid.Column="2" Content="Y-coordinate 2 point"/>
-                <TextBox Name="P2Y" Grid.Column="3" Text=""></TextBox>
-            </Grid> 
+                <Label Grid.Column="0" Content="X-coordinate 2 point" />
+                <TextBox Name="P2X" Grid.Column="1" Text="" />
+                <Label Grid.Column="2" Content="Y-coordinate 2 point" />
+                <TextBox Name="P2Y" Grid.Column="3" Text="" />
+            </Grid>
             <Grid
                 Margin="0 -200 0 0 "
-                Background="Blue"
+                
                 Height="30">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0" Content="X-coordinate 3 point"/>
-                <TextBox Name="P3X" Grid.Column="1" Text=""></TextBox> 
-                <Label Grid.Column="2" Content="Y-coordinate 3 point"/>
-                <TextBox Name="P3Y" Grid.Column="3" Text=""></TextBox>
-            </Grid> 
+                <Label Grid.Column="0" Content="X-coordinate 3 point" />
+                <TextBox Name="P3X" Grid.Column="1" Text="" />
+                <Label Grid.Column="2" Content="Y-coordinate 3 point" />
+                <TextBox Name="P3Y" Grid.Column="3" Text="" />
+            </Grid>
         </Grid>
         <Grid Visibility="Hidden"
-            x:Name="SphereGrid"
-            Grid.Column="1"
-            Grid.Row="0"
-            Background="Aqua">
-            <Label Content="Build Sphere form"></Label>
+              x:Name="SphereGrid"
+              Grid.Column="1"
+              Grid.Row="0">
+              
+            <Label Content="Build Sphere form" />
             <Grid
                 Margin="0 -320 0 0 "
-                Background="Blue"
+                
                 Height="30">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                
-                <Label Grid.Column="0" Content="Radius"/>
-                <TextBox Name="Sr" Grid.Column="1" Text=""></TextBox> 
-            </Grid> 
+
+                <Label Grid.Column="0" Content="Radius" />
+                <TextBox Name="Sr" Grid.Column="1" Text="" />
+            </Grid>
             <Grid
                 Margin="0 -260 0 0 "
-                Background="Blue"
+                
                 Height="30">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0" Content="X-coordinate of sphere"/>
-                <TextBox Name="Sx" Grid.Column="1" Text=""></TextBox> 
-            </Grid> 
+                <Label Grid.Column="0" Content="X-coordinate of sphere" />
+                <TextBox Name="Sx" Grid.Column="1" Text="" />
+            </Grid>
             <Grid
                 Margin="0 -200 0 0 "
-                Background="Blue"
+                
                 Height="30">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0" Content="Y-coordinate of sphere"/>
-                <TextBox Name="Sy" Grid.Column="1" Text=""></TextBox> 
-            </Grid>  
+                <Label Grid.Column="0" Content="Y-coordinate of sphere" />
+                <TextBox Name="Sy" Grid.Column="1" Text="" />
+            </Grid>
             <Grid
                 Margin="0 -140 0 0 "
-                Background="Blue"
+                
                 Height="30">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0" Content="Z-coordinate of sphere"/>
-                <TextBox Name="Sz" Grid.Column="1" Text=""></TextBox> 
-            </Grid> 
+                <Label Grid.Column="0" Content="Z-coordinate of sphere" />
+                <TextBox Name="Sz" Grid.Column="1" Text="" />
+            </Grid>
         </Grid>
         <DockPanel Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0">
-            <Button Click="LoadState" Width="200" DockPanel.Dock="Left" Background="Aquamarine" Content="Load from file"/>
-            <Button Click="SaveState" Width="200" DockPanel.Dock="Left" Background="Red" Content="Export to file"/>
-            <Button Click="DrawCad" Width="200" Margin="0 0 -200 0" DockPanel.Dock="Right" Content="Draw" Background="Green" />
+            <Button Click="LoadState" Width="200" DockPanel.Dock="Left"
+                    Content="Load from file" />
+            <Button Click="SaveState" Width="200" DockPanel.Dock="Left"  Content="Export to file" />
+            <Button Click="DrawCad" Width="200" Margin="0 0 -200 0" DockPanel.Dock="Right" Content="Draw"
+                     />
         </DockPanel>
     </Grid>
 </Window>

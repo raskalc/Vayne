@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
         <TargetFramework>net6.0-windows</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
@@ -10,6 +9,15 @@
 
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="hostdbmgd">
+        <HintPath>..\..\..\..\..\sdk\hostdbmgd.dll</HintPath>
+      </Reference>
+      <Reference Include="hostmgd">
+        <HintPath>..\..\..\..\..\sdk\hostmgd.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

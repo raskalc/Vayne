@@ -134,6 +134,16 @@ public partial class Selector : Window
 
     private void DrawCad(object sender, RoutedEventArgs e)
     {
-        throw new NotImplementedException();
+        var aDraw = new Draw();
+        switch (Sel)
+        {
+            case 2:
+                aDraw.DrawTriangle(int.Parse(P1X.Text), int.Parse(P1Y.Text),int.Parse(P2X.Text), int.Parse(P2Y.Text),int.Parse(P3X.Text),int.Parse(P3Y.Text));
+                break;
+            case 3:
+                aDraw.DrawSphere(int.Parse(Sr.Text), int.Parse(Sx.Text), int.Parse(Sy.Text), int.Parse(Sz.Text));
+                break;
+        }
+
     }
 }
